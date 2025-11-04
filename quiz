@@ -1,0 +1,72 @@
+import java.util.Scanner;
+class quiz{
+    public static void main(String[]args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("welcome to mini quiz game");
+        System.out.println("there are 5 question each is of 10 marks total 50 marks");
+        System.out.println("What is the capital of France?");
+        String ans=sc.nextLine().toLowerCase();
+        int totalmarks=0;
+        if(ans.equals("paris")){
+            System.out.println("you are correct got 10 points");
+            totalmarks+=10;
+        }
+        else{
+            System.out.println("you are wrong 0 point");
+        }
+        
+        System.out.println( "Which planet is known as the Red Planet?");
+         String an=sc.nextLine().toLowerCase();
+        if(an.equals("mars")){
+            System.out.println("you are correct got 10 points");
+            totalmarks+=10;
+        }
+        else{
+            System.out.println("you are wrong 0 point");
+        }
+        System.out.println( "Who wrote 'Romeo and Juliet'?");
+         String c=sc.nextLine().toLowerCase();
+        if(c.equals("willam Shakesperare")){
+            System.out.println("you are correct got 10 points");
+            totalmarks+=10;
+        }
+        else{
+            System.out.println("you are wrong 0 point");
+        }
+        System.out.println( "What is 9 + 10?");
+         int a=sc.nextInt();
+        if(a==19){
+            System.out.println("you are correct got 10 points");
+            totalmarks+=10;
+        }
+        else{
+            System.out.println("you are wrong 0 point");
+        }
+        System.out.println("how many hearts do octopus have" );
+         int b=sc.nextInt();
+        if(b==3){
+            System.out.println("you are correct got 10 points");
+            totalmarks+=10;
+        }
+        else{
+            System.out.println("you are wrong 0 point");
+        }
+        System.out.println("your total score is"+totalmarks);
+        
+    }
+}
+        
+        
+    
+    
+    
+        
+           
+
+        
+    
+            
+            
+            
+            
+            
