@@ -1,0 +1,30 @@
+import java.util.Scanner;
+import java.util.Random;
+
+class medicine{
+    public static void main (String []args){
+        Scanner sc=new Scanner(System.in);
+        System.out.println("enter symptoms");
+        String s=sc.nextLine();
+        String[]headache={"Acetaminophen (Paracetamol)","Nonsteroidal Anti-inflammatory Drugs (NSAIDs)","Combination Medications:"};
+        String[]fever={"Acetaminophen (also known as Paracetamol)","Ibuprofen","Naproxen","Aspirin "};
+        String[]gastric={"Gelusil"," Tums", "Digene"};
+        Random r=new Random();
+            if(s.equals("headache")){
+            System.out.println(headache[r.nextInt(headache.length)]);
+        }
+        else if(s.equals("fever")){
+            System.out.println(fever[r.nextInt(fever.length)]);
+        }
+        else if(s.equals("gastric")){
+            System.out.println(gastric[r.nextInt(gastric.length)]);
+            
+        }
+        else{
+            System.out.println("consult doctor");
+        }
+            
+        }
+        
+        
+    }
